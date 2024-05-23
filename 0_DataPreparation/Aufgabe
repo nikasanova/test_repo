@@ -17,7 +17,7 @@ wetter_df['Datum'] = pd.to_datetime(wetter_df['Datum'])
 merged_df = pd.merge(umsatz_df, kiwo_df, on='Datum', how='inner')
 merged_df = pd.merge(merged_df, wetter_df, on='Datum', how='inner')
 
-# Wochentag als kategoriale Variable
+# Wochentag als kategorielle Variable
 merged_df['Wochentag'] = merged_df['Datum'].dt.dayofweek
 
 # Lineare Regression
