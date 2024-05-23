@@ -4,9 +4,9 @@ import statsmodels.formula.api as smf
 import matplotlib.pyplot as plt
 
 # Dateine einlesen
-umsatz_df = pd.read_csv("umsatzdaten_gekuerzt.csv")
-kiwo_df = pd.read_csv("kiwo.csv")
-wetter_df = pd.read_csv("wetter.csv")
+umsatz_df = pd.read_csv('/workspaces/test_repo/0_DataPreparation/umsatzdaten_gekuerzt.csv')
+kiwo_df = pd.read_csv('/workspaces/test_repo/0_DataPreparation/kiwo.csv')
+wetter_df = pd.read_csv('/workspaces/test_repo/0_DataPreparation/wetter.csv')
 
 # Datum zu datetime-Objekten
 umsatz_df['Datum'] = pd.to_datetime(umsatz_df['Datum'])
